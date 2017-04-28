@@ -7,6 +7,7 @@ gulp.task('default', function() {
 });
 
 gulp.task('styles', function() {
+	console.log('Sass styles');
 	gulp.src('sass/**/*.scss')
 		.pipe(sass().on('error', sass.logError))
 		.pipe(autoprefixer({
@@ -14,4 +15,3 @@ gulp.task('styles', function() {
 		}))
 		.pipe(gulp.dest('./css'));
 });
-//testestest
